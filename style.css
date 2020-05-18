@@ -1,0 +1,79 @@
+/* Fonts */
+
+@font-face {
+    font-family: "notera";
+    src: url("/assets/fonts/notera.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "adobe garamond pro";
+    src: url("/assets/fonts/garamond.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+/* Styling Starts Here */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+nav a {
+    color: #222;
+}
+
+.normal {
+    display: flex;
+}
+
+.normal a {
+    margin-left: 1em;
+    font-family: 'times new roman';
+}
+
+nav ul a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.logo {
+    font-family: 'notera';
+    font-size: 3em;
+}
+
+.subtitle {
+    font-family: 'adobe garamond pro';
+    font-size: 2.2em;
+}
+
+.main-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4.5em;
+}
+
+#mainbody {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 750px) {
+    nav {
+        flex-direction: column;
+    }
+}
