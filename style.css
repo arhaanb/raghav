@@ -76,4 +76,7 @@ nav ul a {
     nav {
         flex-direction: column;
     }
+    .main-title {
+        font-size: 3.2em;
+    }
 }
