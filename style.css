@@ -122,6 +122,8 @@ nav ul a {
 
 .text-item {
     width: 75%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
 }
 
 @media (max-width: 1000px) {
