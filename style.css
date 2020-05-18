@@ -16,6 +16,21 @@
 
 /* Styling Starts Here */
 
+.right {
+    text-align: right;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: #6699ee;
+}
+
+::selection {
+    color: #fff;
+    background: #6699ee;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -84,5 +99,43 @@ nav ul a {
     }
     .main-title {
         font-size: 3.2em;
+    }
+    .logo {
+        text-align: center;
+    }
+}
+
+#about {
+    margin-top: 4em;
+}
+
+#about img {
+    width: 60%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-item {
+    width: 75%;
+}
+
+@media (max-width: 1000px) {
+    .flex {
+        flex-direction: column;
+    }
+    .text-item {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    #about img {
+        width: 85%;
+    }
+    .about-item p {
+        text-align: center;
     }
 }
