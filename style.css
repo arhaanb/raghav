@@ -14,6 +14,10 @@
     font-style: normal;
 }
 
+img {
+    margin: 0;
+}
+
 /* Styling Starts Here */
 
 .right {
@@ -154,13 +158,12 @@ nav ul a {
     /* Your container needs a fixed height, and it 
      * needs to be taller than your tallest column. */
     height: 1625px;
-    margin-top: 2em;
-    margin-bottom: 4em;
+    margin: 2em 0 4em 0;
 }
 
 .flexItem {
     width: 33%;
-    margin-bottom: .6%;
+    margin-bottom: 0.4em;
     /* Optional */
 }
 
