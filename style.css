@@ -103,6 +103,9 @@ nav ul a {
     .logo {
         text-align: center;
     }
+    nav {
+        text-align: center;
+    }
 }
 
 #about {
@@ -139,5 +142,83 @@ nav ul a {
     }
     .about-item p {
         text-align: center;
+    }
+}
+
+/* Masonry Flexbox Thing */
+
+.masonry {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    /* Your container needs a fixed height, and it 
+     * needs to be taller than your tallest column. */
+    height: 1625px;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.flexItem {
+    width: 33%;
+    margin-bottom: .6%;
+    /* Optional */
+}
+
+/* Re-order items into 3 rows */
+
+.flexItem:nth-child(3n+1) {
+    order: 1;
+}
+
+.flexItem:nth-child(3n+2) {
+    order: 2;
+}
+
+.flexItem:nth-child(3n) {
+    order: 3;
+}
+
+/* Force new columns */
+
+.masonry::before, .masonry::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
+}
+
+.non-mason {
+    display: none;
+    margin: 3em 0;
+}
+
+.colitem {
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .masonry {
+        display: none;
+    }
+    .non-mason {
+        display: block;
+    }
+}
+
+@media (max-width: 1100px) {
+    .masonry {
+        height: 1350px;
+    }
+}
+
+@media (max-width: 950px) {
+    .masonry {
+        height: 1100px;
+    }
+}
+
+@media (max-width: 850px) {
+    .masonry {
+        height: 975px;
     }
 }
