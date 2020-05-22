@@ -10,13 +10,28 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body id="body">
     <div class="container">
         <nav>
             <ul>
                 <a href="../">
                     <li class="logo">Raghav Thakar</li>
                 </a>
+            </ul>
+            <ul class="navico">
+                <div id="lines"
+                    onclick="document.getElementById('nav-hid').style.display = 'block'; document.getElementById('lines').style.display = 'none';document.getElementById('cross').style.display = 'block';">
+                    <li>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <div class="line"></div>
+                    </li>
+                </div>
+                <div id="cross"
+                    onclick="document.getElementById('nav-hid').style.display = 'none';document.getElementById('cross').style.display = 'none';document.getElementById('lines').style.display = 'block';">
+                    <span id="x">X</span>
+                </div>
             </ul>
             <ul class="normal">
                 <a href="../street">
@@ -33,6 +48,22 @@
                 </a>
             </ul>
         </nav>
+        <div id="nav-hid">
+            <ul>
+                <a href="../street">
+                    <li>Street</li>
+                </a>
+                <a href="../portrait">
+                    <li>Portrait</li>
+                </a>
+                <a href="../misc">
+                    <li>Misc.</li>
+                </a>
+                <a href="../about">
+                    <li><i>About</i></li>
+                </a>
+            </ul>
+        </div>
     </div>
 
     <div class="container">
@@ -56,4 +87,7 @@
             </div>
         </section>
     </div>
+
+
+    <script src="../main.js"></script>
 </body>

@@ -8,12 +8,18 @@
 }
 
 @font-face {
-    font-family: "adobe garamond pro";
-    src: url("./assets/fonts/garamond.ttf");
+    font-family: "garamond";
+    src: url("./assets/fonts/GARA.TTF");
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: "garamond italic";
+    src: url("./assets/fonts/GARAIT.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
 img {
     margin: 0;
 }
@@ -74,13 +80,17 @@ nav ul a {
     list-style-type: none;
 }
 
+.responsive-br {
+    display: none;
+}
+
 .logo {
     font-family: 'notera';
     font-size: 3em;
 }
 
 .subtitle {
-    font-family: 'adobe garamond pro';
+    font-family: 'garamond italic';
     font-size: 2.2em;
 }
 
@@ -95,21 +105,6 @@ nav ul a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-@media (max-width: 750px) {
-    nav {
-        flex-direction: column;
-    }
-    .main-title {
-        font-size: 3.2em;
-    }
-    .logo {
-        text-align: center;
-    }
-    nav {
-        text-align: center;
-    }
 }
 
 #about {
@@ -133,22 +128,6 @@ nav ul a {
     font-size: 1.1em;
 }
 
-@media (max-width: 1000px) {
-    .flex {
-        flex-direction: column;
-    }
-    .text-item {
-        width: 100%;
-        margin-bottom: 2em;
-    }
-    #about img {
-        width: 85%;
-    }
-    .about-item p {
-        text-align: center;
-    }
-}
-
 /* Masonry Flexbox Thing */
 
 .masonry {
@@ -158,7 +137,7 @@ nav ul a {
     /* Your container needs a fixed height, and it 
      * needs to be taller than your tallest column. */
     height: 1625px;
-    margin: 2em 0 4em 0;
+    margin: 1em 0 4em 0;
 }
 
 .flexItem {
@@ -192,19 +171,126 @@ nav ul a {
 
 .non-mason {
     display: none;
-    margin: 3em 0;
+    margin: 1em 0 3em 0;
 }
 
 .colitem {
     width: 100%;
 }
 
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.line {
+    height: 2px;
+    width: 20px;
+    background-color: #222;
+    margin-bottom: 3px;
+}
+
+.navico li {
+    list-style-type: none;
+    margin: 0;
+}
+
+.navico {
+    display: none;
+}
+
+#nav-hid {
+    display: none;
+    position: absolute;
+    right: 0em;
+    top: 5em;
+    color: #222;
+    /* display: flex; */
+    justify-content: right;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+    padding: 1em 2em;
+}
+
+#nav-hid ul li {
+    list-style-type: none;
+    margin: 0;
+}
+
+#nav-hid a {
+    color: #222;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#cross {
+    color: #222;
+    font-family: 'notera';
+    font-size: 2em;
+    text-align: center;
+    display: none;
+}
+
+/* All responisve stuff */
+
 @media (max-width: 750px) {
+    /* navbar stuff */
+    .normal {
+        display: none;
+    }
+    .logo {
+        font-size: 8vw;
+    }
+    .navico {
+        display: block;
+    }
+    /* Images stuff */
     .masonry {
         display: none;
     }
     .non-mason {
         display: block;
+    }
+    /* Main body stuff */
+    #mainbody {
+        align-items: flex-start;
+        height: auto;
+        margin-top: 15vh;
+        margin-bottom: 20vh;
+    }
+    .responsive-br {
+        display: block;
+    }
+    .main-title {
+        font-size: 15vw;
+    }
+    .subtitle {
+        font-size: 13.5vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .flex {
+        flex-direction: column;
+    }
+    #about {
+        margin-top: 1em;
+    }
+    .text-item {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    #about img {
+        width: 85%;
+    }
+    .about-item p {
+        text-align: center;
     }
 }
 
@@ -224,13 +310,4 @@ nav ul a {
     .masonry {
         height: 975px;
     }
-}
-
-img {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
