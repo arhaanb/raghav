@@ -15,3 +15,5 @@ lines.addEventListener("click", function (ev) {
     document.getElementById('nav-hid').style.display = 'block';
     ev.stopPropagation(); //this is important! If removed, you'll get both alerts
 }, false);
+
+document.getElementsByTagName('img').setAttribute("draggable", "false");

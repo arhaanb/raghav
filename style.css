@@ -20,8 +20,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
 img {
     margin: 0;
+}
+
+a:hover {
+    color: #7e7e7e;
 }
 
 /* Styling Starts Here */
@@ -33,12 +38,12 @@ img {
 ::-moz-selection {
     /* Code for Firefox */
     color: #fff;
-    background: #6699ee;
+    background: #3d3d3d;
 }
 
 ::selection {
     color: #fff;
-    background: #6699ee;
+    background: #3d3d3d;
 }
 
 * {
