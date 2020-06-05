@@ -210,6 +210,14 @@ img {
     display: none;
 }
 
+.navico:hover {
+    cursor: pointer;
+}
+
+.closeimg {
+    width: 4vw;
+}
+
 #nav-hid {
     display: none;
     position: absolute;
@@ -223,6 +231,7 @@ img {
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 100;
     padding: 1em 2em;
+    transition: ease-in 1s;
 }
 
 #nav-hid ul li {
@@ -343,13 +352,13 @@ img {
 
 .masonry {
     columns: 1;
-    column-gap: 10px;
+    column-gap: 5px;
 }
 
 .masonry-item {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
