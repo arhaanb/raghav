@@ -11,54 +11,59 @@
 </head>
 
 <body id="body">
+    <nav id="navbar">
+        <div class="container">
+            <div class="flexnav">
+
+                <ul>
+                    <a href="../">
+                        <li class="logo">Raghav Thakar</li>
+                    </a>
+                </ul>
+                <ul class="navico">
+                    <div id="lines"
+                        onclick="document.getElementById('nav-hid').style.display = 'block'; document.getElementById('lines').style.display = 'none';document.getElementById('cross').style.display = 'block';">
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                        </li>
+                    </div>
+                    <div id="cross"
+                        onclick="document.getElementById('nav-hid').style.display = 'none';document.getElementById('cross').style.display = 'none';document.getElementById('lines').style.display = 'block';">
+                        <!-- <span id="x">X</span> -->
+                        <img src="../assets/img/close.png" alt="" class="closeimg">
+                    </div>
+                </ul>
+                <ul class="normal">
+                    <a href="../street">
+                        <li><i>Street</i></li>
+                    </a>
+                    <a href="../portrait">
+                        <li>Portrait</li>
+                    </a>
+                    <a href="../misc">
+                        <li>Misc.</li>
+                    </a>
+                    <a href="../about">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
-        <nav>
-            <ul>
-                <a href="../">
-                    <li class="logo">Raghav Thakar</li>
-                </a>
-            </ul>
-            <ul class="navico">
-                <div id="lines"
-                    onclick="document.getElementById('nav-hid').style.display = 'block'; document.getElementById('lines').style.display = 'none';document.getElementById('cross').style.display = 'block';">
-                    <li>
-                        <div class="line"></div>
-                    </li>
-                    <li>
-                        <div class="line"></div>
-                    </li>
-                </div>
-                <div id="cross"
-                    onclick="document.getElementById('nav-hid').style.display = 'none';document.getElementById('cross').style.display = 'none';document.getElementById('lines').style.display = 'block';">
-                    <img src="../assets/img/close.png" alt="" class="closeimg">
-                    <!-- <span id="x">X</span> -->
-                </div>
-            </ul>
-            <ul class="normal">
-                <a href="../street">
-                    <li>Street</li>
-                </a>
-                <a href="../portrait">
-                    <li>Portrait</li>
-                </a>
-                <a href="../misc">
-                    <li><i>Misc.</i></li>
-                </a>
-                <a href="../about">
-                    <li>About</li>
-                </a>
-            </ul>
-        </nav>
         <div id="nav-hid">
             <ul>
                 <a href="../street">
-                    <li>Street</li>
+                    <li><i>Street</i></li>
                 </a>
                 <a href="../portrait">
                     <li>Portrait</li>
                 </a>
                 <a href="../misc">
-                    <li><i>Misc.</i></li>
+                    <li>Misc.</li>
                 </a>
                 <a href="../about">
                     <li>About</li>
@@ -66,6 +71,8 @@
             </ul>
         </div>
     </div>
+
+
     <div class="container">
         <div class="masonry">
             <img src="../assets/img/misc/001.jpg" alt="Dummy Image" class="masonry-item">
@@ -86,5 +93,19 @@
 
 
     <script src="../main.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("nav-hid").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+                document.getElementById("nav-hid").style.top = "-200px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 
 </body>
