@@ -131,27 +131,29 @@ nav ul a {
     width: 75%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1em;
+    line-height: 1em;
 }
 
 /* Masonry Flexbox Thing */
 
-.masonry {
+/* .masonry {
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
     /* Your container needs a fixed height, and it 
      * needs to be taller than your tallest column. */
-    height: 1625px;
+
+/* height: 1625px; 
+    height: 4000px;
     margin: 1em 0 4em 0;
 }
 
 .flexItem {
     width: 33%;
     margin-bottom: 0.4em;
-    /* Optional */
 }
 
-/* Re-order items into 3 rows */
+/* Re-order items into 3 rows 
 
 .flexItem:nth-child(3n+1) {
     order: 1;
@@ -165,7 +167,7 @@ nav ul a {
     order: 3;
 }
 
-/* Force new columns */
+/* Force new columns 
 
 .masonry::before, .masonry::after {
     content: "";
@@ -181,7 +183,7 @@ nav ul a {
 
 .colitem {
     width: 100%;
-}
+} */
 
 img {
     -webkit-touch-callout: none;
@@ -256,12 +258,12 @@ img {
         display: block;
     }
     /* Images stuff */
-    .masonry {
+    /* .masonry {
         display: none;
     }
     .non-mason {
         display: block;
-    }
+    } */
     /* Main body stuff */
     #mainbody {
         align-items: flex-start;
@@ -299,7 +301,7 @@ img {
     }
 }
 
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
     .masonry {
         height: 1350px;
     }
@@ -315,4 +317,57 @@ img {
     .masonry {
         height: 975px;
     }
+}
+
+/* Masonry Shit 
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 20px;
+}
+
+.grid img {
+    width: 100%;
+    margin-bottom: 7em;
+} */
+
+/* Another container type thing - wrap the masonry images in this for some padding */
+
+.masonry-wrapper {
+    padding: 1.5em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.masonry {
+    columns: 1;
+    column-gap: 10px;
+}
+
+.masonry-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+        columns: 2;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .masonry {
+        columns: 3;
+    }
+}
+
+.masonry-item {
+    overflow: hidden;
+}
+
+.masonry img {
+    width: 100%;
 }
