@@ -21,6 +21,25 @@
     font-style: normal;
 }
 
+/* scrollbar shit */
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    /* border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #6F248F;
+    border-left-color: #6F248F; */
+    width: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #222;
+}
+
 img {
     margin: 0;
 }
@@ -288,40 +307,6 @@ img {
 
 .animatebro {
     transition: 1s ease-in;
-}
-
-/*@media (max-width: 950px) {
-    .masonry {
-        height: 1100px;
-    }
-}
-
-@media (max-width: 850px) {
-    .masonry {
-        height: 975px;
-    }
-}
-
-/* Masonry Shit 
-
-.grid {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 20px;
-}
-
-.grid img {
-    width: 100%;
-    margin-bottom: 7em;
-} */
-
-/* Another container type thing - wrap the masonry images in this for some padding */
-
-.masonry-wrapper {
-    padding: 1.5em;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .masonry {
