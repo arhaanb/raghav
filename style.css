@@ -244,7 +244,6 @@ img {
     /* main body stuff */
     #mainbody {
         align-items: flex-start;
-        height: auto;
         margin-top: 15vh;
         margin-bottom: 20vh;
     }
