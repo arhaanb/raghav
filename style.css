@@ -50,6 +50,11 @@ a:hover {
 
 /* Styling Starts Here */
 
+.ez {
+    color: #222;
+    text-decoration: none;
+}
+
 .right {
     text-align: right;
 }
