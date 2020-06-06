@@ -168,14 +168,22 @@ img {
 }
 
 .closeimg {
-    width: 4vw;
+    width: 3vw;
+    transition: 0.5s;
+}
+
+.fixedcon {
+    -webkit-transform: translateZ(500);
 }
 
 #nav-hid {
     display: none;
     position: absolute;
-    right: 0em;
-    top: 5em;
+    /* right: 0em;
+    top: 5em; */
+    /* right: 7vw; */
+    top: 13vw;
+    right: 0;
     color: #222;
     /* display: flex; */
     justify-content: right;
@@ -186,8 +194,6 @@ img {
     padding: 1em 2em;
     transition: top 0.3s;
     position: fixed;
-    margin-top: 15%;
-    right: 10%;
 }
 
 #nav-hid ul li {

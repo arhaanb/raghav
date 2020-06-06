@@ -53,7 +53,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container fixedcon">
         <div id="nav-hid">
             <ul>
                 <a href="../street">
@@ -103,7 +103,7 @@
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("navbar").style.top = "0";
-                document.getElementById("nav-hid").style.top = "0";
+                document.getElementById("nav-hid").style.top = "13vw";
             } else {
                 document.getElementById("navbar").style.top = "-200px";
                 document.getElementById("nav-hid").style.top = "-200px";
