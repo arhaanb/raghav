@@ -286,6 +286,10 @@ img {
     }
 }
 
+.animnav {
+    transition: 1s ease-in;
+}
+
 /*@media (max-width: 950px) {
     .masonry {
         height: 1100px;
