@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
     transition: top 0.3s;
+    top: 0;
 }
 
 nav a {
@@ -236,6 +237,9 @@ img {
     }
     .inLanding {
         margin-top: 15em;
+    }
+    .everything {
+        margin-top: 18vw;
     }
     /* main body stuff */
     #mainbody {
