@@ -245,7 +245,7 @@ img {
     #mainbody {
         align-items: flex-start;
         margin-top: 15vh;
-        margin-bottom: 20vh;
+        height: 60vh;
     }
     .responsive-br {
         display: block;
