@@ -178,7 +178,6 @@ img {
 
 #nav-hid {
     display: none;
-    position: absolute;
     /* right: 0em;
     top: 5em; */
     /* right: 7vw; */
@@ -193,7 +192,7 @@ img {
     z-index: 1000;
     padding: 1em 2em;
     transition: top 0.3s;
-    position: fixed;
+    position: absolute;
 }
 
 #nav-hid ul li {
@@ -234,9 +233,9 @@ img {
         background-color: #fff;
         width: 100%;
     }
-    .everything {
+     .everything {
         margin-top: 20vw;
-    }
+    } 
     .inLanding {
         margin-top: 15em;
     }
