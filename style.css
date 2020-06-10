@@ -21,6 +21,31 @@
     font-style: normal;
 }
 
+.garamond {
+    font-family: 'garamond';
+}
+
+.times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icons {
+    font-size: 1.4em;
+}
+
+.icons i {
+    margin-left: 1em;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #222;
+}
+
+.icons a:hover {
+    color: #7e7e7e;
+}
+
 /* scrollbar shit */
 
 ::-webkit-scrollbar {
@@ -45,10 +70,10 @@ img {
 }
 
 a:hover {
-    color: #7e7e7e;
+    color: #222;
 }
 
-#about a {
+a {
     color: #7e7e7e;
 }
 
@@ -87,6 +112,14 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer {
+    margin-top: 1em;
 }
 
 .center {
@@ -251,7 +284,19 @@ img {
     display: none;
 }
 
+.arhaan {
+    color: #222;
+}
+
+.arhaan:hover {
+    color: #7e7e7e;
+}
+
 /* All responisve stuff */
+
+.none {
+    display: none;
+}
 
 @media (max-width: 750px) {
     /* navbar stuff */
@@ -300,6 +345,23 @@ img {
     }
     .resp-align {
         text-align: center;
+    }
+    footer {
+        text-align: center;
+    }
+    footer i {
+        text-align: center;
+        margin-left: 0;
+    }
+    .icons i {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .none {
+        display: block;
+    }
+    .cred {
+        display: none;
     }
 }
 
