@@ -141,13 +141,17 @@ nav ul a {
     flex-direction: column;
 }
 
-/* #about {
-    margin-top: 4em;
-} */
-
-#about img {
-    width: 60%;
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.me {
+    width: 100%;
+}
+
+.respbro {}
 
 .flex {
     display: flex;
@@ -157,7 +161,6 @@ nav ul a {
 }
 
 .text-item {
-    width: 75%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1em;
     line-height: 1.5em;
@@ -279,6 +282,15 @@ img {
     }
     .subtitle {
         font-size: 9vw;
+    }
+    #about {
+        flex-direction: column;
+    }
+    .mmh.five.columns {
+        width: 100%;
+    }
+    .resp-align {
+        text-align: center;
     }
 }
 
