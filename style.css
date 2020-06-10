@@ -48,6 +48,15 @@ a:hover {
     color: #7e7e7e;
 }
 
+#about a {
+    color: #7e7e7e;
+}
+
+#about a:hover {
+    color: #222;
+    transition: 0.5s;
+}
+
 /* Styling Starts Here */
 
 .ez {
