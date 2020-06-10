@@ -141,9 +141,9 @@ nav ul a {
     flex-direction: column;
 }
 
-#about {
+/* #about {
     margin-top: 4em;
-}
+} */
 
 #about img {
     width: 60%;
@@ -160,7 +160,7 @@ nav ul a {
     width: 75%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1em;
-    line-height: 1em;
+    line-height: 1.5em;
 }
 
 img {
