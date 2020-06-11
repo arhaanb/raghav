@@ -188,6 +188,7 @@ nav ul a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4.5em;
 }
 
 .me {
