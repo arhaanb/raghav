@@ -188,7 +188,14 @@ nav ul a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4.5em;
+}
+
+.about-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .me {
@@ -316,7 +323,6 @@ img {
         z-index: 500;
         background-color: #fff;
         width: 100%;
-        margin-bottom: 5em;
     }
     .inLanding {
         margin-top: 15em;
@@ -339,12 +345,6 @@ img {
     .subtitle {
         font-size: 9vw;
     }
-    #about {
-        flex-direction: column;
-    }
-    .mmh.five.columns {
-        width: 100%;
-    }
     .resp-align {
         text-align: center;
     }
@@ -354,15 +354,6 @@ img {
     footer i {
         text-align: center;
         margin-left: 0;
-    }
-    .none {
-        display: block;
-    }
-    .cred {
-        display: none;
-    }
-    .text-item {
-        text-align: center;
     }
 }
 
@@ -380,8 +371,23 @@ img {
     #about img {
         width: 85%;
     }
+    .mmh.five.columns, .mmh.seven.columns {
+        width: 100%;
+    }
     .about-item p {
         text-align: center;
+    }
+    #about {
+        flex-direction: column;
+    }
+    .text-item {
+        text-align: center;
+    }
+    .resp-align2 {
+        text-align: center;
+    }
+    .about-container {
+        height: auto;
     }
 }
 
