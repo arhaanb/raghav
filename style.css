@@ -326,7 +326,7 @@ img {
     /* main body stuff */
     #mainbody {
         align-items: flex-start;
-        margin-top: 15vh;
+        margin-top: 4vh;
         height: 60vh;
     }
     .responsive-br {
