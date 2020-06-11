@@ -381,7 +381,7 @@ img {
         flex-direction: column;
     }
     .text-item {
-        text-align: center;
+        text-align: left;
     }
     .resp-align2 {
         text-align: center;
