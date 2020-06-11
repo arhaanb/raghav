@@ -118,6 +118,11 @@ footer p {
     margin: 0;
 }
 
+.icons i {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 footer {
     margin-top: 1em;
 }
@@ -353,10 +358,6 @@ img {
         text-align: center;
         margin-left: 0;
     }
-    .icons i {
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    }
     .none {
         display: block;
     }
@@ -426,4 +427,21 @@ img {
 
 .masonry img {
     width: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Trick */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1em 0;
 }
