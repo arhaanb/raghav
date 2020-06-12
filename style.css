@@ -451,3 +451,19 @@ footer {
     margin-top: auto;
     padding: 1em 0;
 }
+
+@media (prefers-color-scheme: dark) {
+  
+}
+
+#cross {
+    font-size: 1em;
+}
+
+#lines {
+    font-size: 1em;
+}
+
+.lines {
+    display: inline-block;
+}
