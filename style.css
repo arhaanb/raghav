@@ -69,12 +69,12 @@ img {
     margin: 0;
 }
 
-a:hover {
-    color: #222;
-}
-
 a {
     color: #5c5c5c;
+}
+
+a:hover {
+    color: #222;
 }
 
 #about a:hover {
@@ -141,10 +141,6 @@ footer {
 nav {
     transition: top 0.3s;
     top: 0;
-}
-
-nav a {
-    color: #222;
 }
 
 .normal {
@@ -499,4 +495,12 @@ footer {
 
 .icon-menu:before {
     content: "\e900";
+}
+
+nav a {
+    color: #222;
+}
+
+nav a:hover {
+    color: #7e7e7e;
 }
