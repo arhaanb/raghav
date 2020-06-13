@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/icon.png" type="image/png">
+    <title>Raghav Thakar</title>
+    <link rel="stylesheet" href="../skeleton.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/53f1b26a84.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169267861-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169267861-1');
+    </script>
+</head>
+
+<style>
+    body {
+        background-color: blue;
+    }
+    #error {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .sub {
+        font-size: 1.5em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .heart {
+        color: rgb(248, 74, 74);
+    }
+</style>
+
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <div class="flexnav">
+                <ul>
+                    <a href="./">
+                        <li class="logo">Raghav Thakar</li>
+                    </a>
+                </ul>
+                <ul class="navico">
+                    <div id="lines">
+                        <span class="icon-menu"></span>
+                    </div>
+
+                    <div id="cross">
+                        <span class="icon-close"></span>
+                    </div>
+                </ul>
+                <ul class="normal">
+                    <a href="../street">
+                        <li>Street</li>
+                    </a>
+                    <a href="../portrait">
+                        <li>Portrait</li>
+                    </a>
+                    <a href="../misc">
+                        <li>Misc.</li>
+                    </a>
+                    <a href="../about">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container fixedcon">
+        <div id="nav-hid">
+            <ul>
+                <a href="../street">
+                    <li>Street</li>
+                </a>
+                <a href="../portrait">
+                    <li>Portrait</li>
+                </a>
+                <a href="../misc">
+                    <li>Misc.</li>
+                </a>
+                <a href="../about">
+                    <li>About</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="everything">
+        <section id="error">
+            <div class="container center">
+                <h1 class="title">404</h1>
+                <h4 class="sub">Page not found. You can go <a href="./">home</a>.</h4>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h6 class="title center">Made with <i class="fa fa-heart heart"></i> by <a
+                    href="//arhaanb.github.io">Arhaan</a></h6>
+        </div>
+    </footer>
+</body>
+
+</html>
